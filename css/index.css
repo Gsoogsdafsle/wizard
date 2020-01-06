@@ -1,0 +1,129 @@
+h1 {
+	padding: 20px 0;
+	font-size: 40px;
+}
+span{
+	color: red;
+}
+
+.bigBlue{
+	font-size: 30px;
+	color: blue;
+}
+
+.bgcolor{
+	background-color: #f9f9f9;
+}
+
+.tutorial{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.notice{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+
+.content{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px 5px;
+}
+
+
+.p1 {
+	text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.img1 img {
+	width: 100%;
+}
+
+.p2 {
+	margin: 50px 5px 10px 5px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.img2 img{
+	width: 100%;
+}
+
+
+.pc {
+	text-align: left;
+}
+
+.pc .step1{
+	font-size: 20px;
+}
+.pc .step2{
+	font-size: 20px;
+}
+
+
+.app {
+	margin-top: 50px;
+}
+
+.app .title{
+	font-size: 24px;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.app .img3 img{
+	width: 100%;
+}
+.app p {
+	font-size: 20px;
+	text-align: left;
+}
+.app .step-list{
+	text-align: left;
+}
+
+.thks{
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 600;
+	color: red;
+}
+
+
+/** notice */
+
+p{
+	text-align: left;
+	font-weight: 600;
+}
+
+.bottom{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.blue{
+	color: blue;
+}
+
+.android{
+	width: 100%;
+}
+.android .img2{
+	width: 50%;
+}
+
+.pc .img2{
+	width: 100%;
+}
