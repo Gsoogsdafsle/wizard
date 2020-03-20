@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <title>部分用户更新2.1.5/2.1.6版本出现一直在连接中的解决方案</title>
+  </head>
+  <body> 
+  <div class="content">
+	 <section class="intro">
+				<h1> 部分用户更新2.1.5/2.1.6版本出现一直在连接中的解决方案 </h1>
+                <p> 近期有部分用户反馈，在更新使用2.1.5/2.1.6版本时，一直连接不上或一直在连接中问题，对于此类问题产生的原因和解决方案，我们在这里给大家做一个回复：  </p>
+                <p> 为什么部分用户在使用新版本2.1.5/2.1.6的过程中会出现连接不上，一直加载中？
+                	这是由于新版新增的加密协议误差时间最大只能在90秒内，而部分用户使用的设备（App，Win，Mac）时间比北京时间快或慢90秒以上，则会造成连接不上或一直连接中。遇到此类问题，我们只需要将本地时间纠正为正确时区时间，即可快速解决。</p>
+<p>注：假如你在东8区，需要纠正为北京时间；假如你在0时区，则需要纠正为伦敦时间。</p>
+				<p>
+                那么我们如何校准本地系统时间呢？
+下面我们用图示给大家分别详细介绍一下Android，Win10，Win7，Mac四个系统 时间同步 的方法：</p>
+
+       </section>
+       <section class="accordion p-0" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+        <h3> 	Android 手机系统北京时间校准同步详细方法 </h3>  
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+          <p>  首先您需要先确认一下您的安卓设备时间是否和世界时间一致； </p> 
+            <p>  点击此处可查看准确的北京时间，便于在于东八区的您确认本地系统时间是否存在误差。</p> 
+           <p>   如果存在误差，您可以按照以下方法进行纠正（以OPPO手机为例）：</p>
+          <p>    第一步：在安卓手机的图标界面中找到设置图标，点击设置图标，进入安卓手机设置界面。</p> 
+          <img src="img/android1.png" class="img-fluid">
+       		
+           		 <p> 第二步：手指滑动设置界面，在找设置界面中找到“其他设置”—“日期和时间”，点击进入日期和时间设置。 </p>
+    			   <img src="img/android2.jpg" class="col-7 img-fluid">
+               
+               <p> 第三步：点击进入日期和时间设置界面后，界面设置从上至下第二项显示【自动确定日期与时间】的一个勾选框，下方就是设置日期、选择时区、日期时间格式设置等。
+               <span class="text-danger">点击【自动确定日期与时间】右侧的勾选框，把这个框框选上，就可以使用网络所提供的时间值。到此自动设置时间自动同步就完成了。</span> </p>
+               <div class="d-flex justify-content-center">
+                <div class="p-2"> <img src="img/android3.jpg" class="col-12 "> </div>
+                 <div class="p-2"> <img src="img/android4.jpg" class=" col-12"> </div> 
+       			 
+                </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       
+      <h3> Windows10系统 时间同步 详细方法</h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>第一步：点击电脑左下角【开始菜单】，在弹出的菜单栏中点击【设置选项】；</p> <img src="img/win1.png" class="img-fluid">
+        <p>第二步：进入设置界面，点击【时间和语言】；</p><img src="img/win2.png" class="img-fluid">
+        <p> 第三步：进入设置界面，找到日期和时间，将【自动设置时间】打开；打开之后在下方的时区处，选择所在的时区；  </p><img src="img/win3.png" class="img-fluid">
+ 		<p> 第四步：如果自动更新仍然获取不到最新时间，可以点击下方【更改】； </p><img src="img/win4.png" class="img-fluid"> 
+        <p> 第五步：进入时间设置对话框，手动更新时间，然后再次打开自动更新；此时时间即可自动进行同步了。 </p> <img src="img/win5.png" class="img-fluid">
+        
+        <h3> 此外，您也可以设置与Internet 时间同步，具体方法如下： </h3>
+        <p> 第一步：在系统左下角搜索区域找到Win10系统的【控制面板】；在【控制面板】中选择【时钟与区域】； </p> <img src="img/win6.png" class="img-fluid">
+        <p> 第二步：在【时钟与区域】中选择【设置时间和日期】；</p><img src="img/win7.png" class="img-fluid">
+        <p> 第三步：在【时间和日期】中选择【Internet 时间】； </p><img src="img/win8.png" class="img-fluid">
+        <p> 第四步：在【Internet 时间】中，点击【更改设置】，然后勾选【与Internet 时间服务器同步】，最后点击【确定】，就好了。 </p> <img src="img/win8.png" class="img-fluid">
+        
+          
+        
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <h3> Windows7系统 时间同步 详细方法 </h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body"> 
+      	<p>  第一步：点击电脑屏幕右下角位置可以看到的当前时间和日期；</p> <img src="img/win7-1.png" class="img-fluid">
+      	<p> 第二步：点击下方图片中的【更改日期和时间设置】； </p> <img src="img/win7-2.png" class="img-flud">
+      	<p> 第三步：点击下方图片中的【Internet 时间】；</p> <img src="img/win7-3.png" class="img-flud">
+        <p> 第四步：点击下方图片中的【更改设置】； </p>  <img src="img/win7-4.png" class="img-flud">
+		<p> 第五步：勾选下方图片中的【与Internet时间服务器同步】，服务器选择【默认】，或者点击下拉三角任意选择，并点击确定，如下图；这样时间就自动更新好了。 </p>
+        <img src="img/win7-5.png" class="img-fluid"> 
+      
+      </div>
+    </div>
+  </div>
+  
+   <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+       
+      <h3> Mac系统 时间同步 详细方法 </h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body"> 
+      	 <p>  第一步：选取苹果菜单 >“系统偏好设置”，然后点按“日期与时间”。 在“日期与时间”面板中，选择【点按锁按钮以进行更改】；</p> <img src="img/mac1.png" class="img-fluid">
+      	 <p> 第二步：为了安全起见，Mac系统更改设置需要输入电脑用户名和密码，才可以进行更改，因此您需要先在这里输入用户名和密码，再进行设置更改；</p>
+         <img src="img/mac2.png" class="img-fluid">
+         
+         <p> 第三步：勾选上【自动设置日期与时间】，选择好自己所在的时区；然后点击【点按锁按钮以防止再次更改】；此时关掉系统设置回到桌面，即可看到时间已经同步设置了目前的所在地区时间。</p>
+                  <img src="img/mac3.png" class="img-fluid">
+                  
+         <p>关于Mac系统【时区】说明：点击【系统偏好设置】-【日期与时间】-【时区】，系统会自动根据您的所在位置为您默认选择好时区，此时勾选好【使用当前位置自动设定时区】即可；不过，您也可以点击【点按锁按钮以进行更改】，手动在地图上点击自己所在的区域，作为自己的时区。
+
+</p>
+                  <img src="img/mac4.png" class="img-fluid">
+					                  <img src="img/mac5.png" class="img-fluid">
+
+				
+                
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+     
+     <section class="footer">
+     <p> 以上便是Android，Win10，Win7，Mac四个系统时间同步的方法，供大家参考。</p>
+		<p>此外，请大家检查自己的版本，如果发现自己的版本还不是最新的2.1.6版本，请及时更新，旧版本客户端已不再支持，感谢您的支持！ </p>
+     
+     
+     </section>  
+</div>        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	  
+
+ </body>
+</html>
